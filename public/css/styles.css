@@ -1,0 +1,455 @@
+* {
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    color: #000000;
+}
+
+:root {
+    --backgroundprimary: #773cbe;
+
+  }
+body
+{
+    padding: 0;
+    margin: 0;
+    direction: rtl;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+:lang(en) body{
+    direction: ltr;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+header
+{
+    max-width: 1100px;
+    margin: auto;
+    width: 100%;
+    position: relative;
+}
+
+.topheader
+{
+    height: 100px;
+    margin: auto;
+    position: relative;
+}
+
+:lang(ar)#TopMenu
+{
+   position: absolute;
+   left: 0;
+   top: 40px;
+}
+
+:lang(en)#TopMenu
+{
+    position: absolute;
+   right: 0;
+   top: 40px;
+}
+
+:lang(ar)#Logo
+{
+    position: absolute;
+    right: 0;
+    top: 40px;
+    width: 150px;
+    height: 50px;
+    margin: auto;
+    background-position: center;
+    background-image: url('../assets/logo.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+:lang(en)#Logo{
+    position: absolute;
+    left: 0;
+    top: 40px;
+    width: 150px;
+    height: 50px;
+    margin: auto;
+    background-position: center;
+    background-image: url('../assets/logo.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+.botton
+{
+    height: 40px;
+    line-height: 40px;
+    background-color: var(--backgroundprimary);
+    padding: 13px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+
+.Link2
+{
+    background-color: #c5c3c3;
+    margin-left: 5px;
+}
+
+.sep
+{
+    height: 20px;
+    clear: both;
+    display: block;
+}
+
+.MainMenu
+{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+
+.MainMenuLinkSelected {
+    background-color: #773cbe !important;
+    color: #ffffff !important;
+}
+
+.MainMenuLink
+{
+    text-decoration: none;
+    flex: 1;
+    text-align: center;
+    font-size: 16px;
+    height: 40px;
+    line-height: 40px;
+    font-weight: 700;
+    position: relative;
+    cursor: pointer;
+}
+
+.MainSubMenuLink
+{
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 100;
+    padding: 8px 10px 8px 10px;
+    border-top: 1px solid rgba(255,255,255,0.3);
+    line-height: 22px;
+    cursor: pointer;
+}
+
+.MainMenuSubMenu
+{
+    position: absolute;
+    top: 40px;
+    right: 0px;
+    left: 0px;
+    background-color: #945CD6;
+    color: #ffffff;
+    overflow: hidden;
+    display: none;
+    z-index: 9999;
+    width: 200px;
+    margin: auto
+}
+
+
+.MainMenuLink:hover .MainMenuSubMenu
+{
+    display: block;
+}
+
+
+
+
+.MainMenuLinkMobile:hover
+{
+    background-color: #945CD6;
+    cursor: pointer;
+}
+
+.MainMenuLinkMobile
+{
+    display: none;
+    width: 100%;
+    height: 40px;
+    background-color: #773cbe;
+    background-image: url('../assets/mobilemenu.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    float: left;
+
+}
+
+.MainMenuMobile {
+    display: none;
+    clear: both;
+    width: 100%;
+}
+
+.MainMenuLinkMobile2
+{
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    width: calc( 100% - 40px );
+    padding: 0px 20px 0px 20px;
+    display: block;
+    clear: both;
+    background-color: #e0e0e0;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+
+.MainMenuSubMenuMobile {
+    background-color: #e0e0e0;
+}
+
+
+
+
+#Footer {
+    width: 100%;
+    background-color: #f7f7f7;
+}
+
+
+#FooterContent
+{
+    max-width: 1100px;
+    width: 100%;
+    display: flex;
+    padding: 40px 0px 40px 0px;
+    margin: auto;
+}
+
+
+#FooterSection1{
+    flex: 1;
+    padding-left: 40px;
+}
+:lang(en)#FooterSection1
+{
+    padding-right: 40px;
+}
+
+#FooterSection2 {
+    flex: 1;
+}
+
+
+#FooterSection3 {
+    flex: 1;
+    padding-right: 40px;
+}
+
+:lang(en)#FooterSection3
+{
+    padding-left: 40px;
+}
+
+.Title {
+    font-size: 18px;
+    font-weight: 700;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #000000;
+    margin-bottom: 20px;
+    flex: 0 1 100%;
+}
+
+.Title3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.FooterSection1SocialTwitter {
+    width: 28px;
+    height: 28px;
+    background-image: url('../assets/social_twitter.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.FooterSection1SocialFacebook {
+    width: 28px;
+    height: 28px;
+    background-image: url('../assets/social_fb.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.InputText {
+    border: 1px solid #000000;
+    background-color: transparent;
+    width: calc(100% - 42px);
+    padding: 0px 20px 0px 20px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 2px;
+    margin-bottom: 10px;
+}
+
+.InputDescription {
+    font-size: 11px;
+    color: #000000;
+    margin-bottom: 15px;
+    text-align: justify;
+    margin-top: -5px;
+}
+
+.InputTextArea {
+    border: 1px solid #000000;
+    background-color: transparent;
+    width: calc(100% - 42px);
+    padding: 0px 20px 0px 20px;
+    margin-bottom: 10px;
+    border-radius: 2px;
+}
+
+
+.InputBtn2 {
+    height: 40px;
+    line-height: 40px;
+    border: 0px;
+    border-radius: 2px;
+    width: 100%;
+    padding-right: 20px;
+    color: #ffffff;
+    font-size: 12px;
+    background-color:var(--backgroundprimary);
+}
+
+.InputBtn2:hover {
+    background-color: #945CD6;
+    cursor: pointer;
+}
+
+#FooterContent2
+{
+    margin: 10px 0px !important;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+
+
+.slideShowContainer{
+  margin: 1.4rem 0;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  height: 400px;
+}
+
+
+.slideShow
+{
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    transition: opacity 1s;
+}
+
+.show1
+{
+background-image: url("https://sabaa.org/data/slideshow/1.jpg");
+opacity: 1;
+}
+.show2
+{
+background-image: url("https://sabaa.org//data//slideshow//2.jpg");
+opacity: 0;
+}
+.show3
+{
+background-image: url("https://sabaa.org//data//slideshow//3.jpg");
+opacity: 0;
+}
+
+.slideButtonNext , .slideButtonPreview
+{
+  width: 100px;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 50px 70px;
+  opacity: 0.5;
+}
+
+.slideButtonNext
+{
+  background-image: url('../assets/ss_arrow_right.png');
+  right: 0px;
+
+}
+
+.slideButtonPreview
+{
+  background-image: url('../assets/ss_arrow_left.png');
+  left:  0px;
+
+}
+
+
+.slideButtonNext:hover , .slideButtonPreview:hover
+{
+    background-position: center,center;
+    background-repeat: no-repeat;
+    background-size: 50px 70px,auto;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.slideButtonNext:hover
+{
+  background-image: url('../assets/ss_arrow_right.png'),-webkit-linear-gradient(right, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 100%);
+
+}
+
+.slideButtonPreview:hover
+{
+    background-image: url('../assets/ss_arrow_left.png'),-webkit-linear-gradient(right, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 100%);
+}
+
+a{
+  color: black!important
+}
+
+
+.btn-color
+{
+  background-color:  var(--backgroundprimary)!important;
+  color: white!important;
+  
+}
+.title
+{
+  font-size: 18px;
+      font-weight: 700;
+      height: 40px;
+      line-height: 40px;
+      border-bottom: 1px solid #000000;
+      margin-bottom: 20px;
+      flex: 0 1 100%;
+}
